@@ -2,7 +2,7 @@
   "domain": "sun_hours",
   "name": "Sun Hours",
   "codeowners": [],
-  "dependencies": [],
+  "dependencies": ["sensor"],
   "documentation": "https://github.com/laurensk/hass-sun-hours",
   "iot_class": "cloud_polling",
   "requirements": [],
