@@ -1,0 +1,12 @@
+name: hass-sun-hours
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes:
+      - ./custom_components:/config/custom_components
+    ports:
+      - 127.0.0.1:8123:8123
+    environment:
+      - TZ=UTC
+    restart: unless-stopped
